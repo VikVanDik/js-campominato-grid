@@ -24,8 +24,9 @@ function createCells (numCell) {
   
 }
 
-const select = document.getElementById ('difficulty').value
+
 function difficulty (){
+  const select = document.getElementById ('difficulty').value
   if (select === 1){
     createCells(100)
   } else if (select === 2){
