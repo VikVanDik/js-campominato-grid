@@ -30,7 +30,7 @@ RAGIONAMENTO
 ##
 
 1. Creare il markup html e lo stile da usare come base per lo script.
-2. Creare un ciclo al quale collegare gli elementi da creare (da aggiungere a funzione?).
+2. Creare un ciclo al quale collegare gli elementi da creare (da aggiungere a funzione).
 3. Creare gli elementi da javascript ed aggiungere loro le classi necessarie.
 4. Collegare l'indice alle celle così da ottenere i log delle stesse.
 5. Future updates...
