@@ -3,13 +3,15 @@
 
 const container = document.querySelector('.c-container')
 
-function createCells (numCell) {
-  for (let i = 1; i <=numCell; i++) {
+function createCells () {
+  for (let i = 1; i <=100; i++) {
     let cell = document.createElement ('div')
-    cell.classList.toggle ('cell-numCell')
+    cell.classList.toggle ('cell-100')
     container.append(cell);
   }
 }
+
+createCells();
 
 
 console.log(container);
