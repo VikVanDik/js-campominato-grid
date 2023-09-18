@@ -10,7 +10,6 @@ function createCells (numCell) {
     let cell = document.createElement ('div')
     cell.classList.toggle(`cell-${numCell}`)
     container.append(cell);
-    console.log(cell);
 
     cell.addEventListener ('click', function () {
       let classAdded = this.classList.toggle ('clicked')
@@ -25,11 +24,11 @@ function createCells (numCell) {
   
 }
 
+const select = document.getElementById ('difficulty').value
 function difficulty (){
-  let select = document.getElementById ('difficulty')
-  if (select.value === 1){
+  if (select === 1){
     createCells(100)
-  } else if (select.value === 2){
+  } else if (select === 2){
     createCells(81)
   } else {
     createCells(49)
@@ -39,8 +38,9 @@ function difficulty (){
 const button = document.getElementById('button')
 
 button.addEventListener('click', function (){
-container.classList.remove ('d-none')
-difficulty();
+  container.classList.remove ('d-none')
+  difficulty();
+  console.log(select);
 })
 
 console.log(container);
