@@ -20,16 +20,28 @@ function createCells (numCell) {
       } else {
         cell.innerHTML = ``
       }
-
-      
     })
   }
   
 }
 
+function difficulty (){
+  let select = document.getElementById ('difficulty')
+  if (select.value === 1){
+    createCells(100)
+  } else if (select.value === 2){
+    createCells(81)
+  } else {
+    createCells(49)
+  }
+}
 
-createCells(100);
+const button = document.getElementById('button')
 
+button.addEventListener('click', function (){
+container.classList.remove ('d-none')
+difficulty();
+})
 
 console.log(container);
 
